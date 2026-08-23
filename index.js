@@ -31,7 +31,7 @@ client.on('guildMemberAdd', async (member) => {
         console.log(`✅ ให้ยศ "role.name"แก่{role.name}" แก่role.name"แก่{member.user.tag} แล้ว`);
 
         // 💬 ส่งข้อความต้อนรับใน DM (ถ้าไม่อยากได้ ลบบรรทัดนี้ออก)
-        await member.send(`ยินดีต้อนรับสู่ **{member.guild.name}**! คุณได้รับยศ \`{role.name}\` แล้ว 🎉`);
+        // await member.send(...);
     } catch (error) {
         console.error(`❌ ให้ยศไม่สำเร็จ (${member.user.tag}):`, error.message);
     }
